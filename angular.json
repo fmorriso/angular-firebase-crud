@@ -28,6 +28,18 @@
             "scripts": []
           },
           "configurations": {
+            "development": {
+              "optimization": false,
+              "outputHashing": "none",
+              "sourceMap": true,
+              "extractCss": true,
+              "namedChunks": true,
+              "commonChunk": true,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "buildOptimizer": false,
+              "progress": true
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -44,6 +56,7 @@
               "extractLicenses": true,
               "vendorChunk": true,
               "buildOptimizer": true,
+              "aot": true,
               "progress": true
             }
           }
@@ -54,6 +67,9 @@
             "browserTarget": "angular-firebase-crud:build"
           },
           "configurations": {
+            "development": {
+              "browserTarget": "angular-firebase-crud:build:development"
+            },
             "production": {
               "browserTarget": "angular-firebase-crud:build:production"
             }
